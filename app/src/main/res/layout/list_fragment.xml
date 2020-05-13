@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp">
+
+        <TextView
+            android:id="@+id/budget"
+            style="@style/TextTitle"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/budget"
+            android:textSize="28sp">
+        </TextView>
+
+        <View
+            android:id="@+id/centerLine"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/spent_month"
+            android:layout_alignStart="@+id/spent"
+            android:background="@color/colorBottomIcons"/>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_below="@id/balance"
+            android:layout_toStartOf="@+id/centerLine"
+            android:background="@color/colorBottomIcons" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/spent_month"
+            android:background="@color/colorBottomIcons"/>
+
+        <TextView
+            android:id="@+id/balance"
+            style="@style/Price"
+            android:layout_below="@+id/budget"
+            tools:text="@string/price_example">
+        </TextView>
+
+        <TextView
+            android:id="@+id/month"
+            style="@style/TextTitle"
+            android:layout_below="@+id/balance"
+            android:text="@string/month"
+            android:textSize="25sp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/spent_month"
+            style="@style/Price"
+            android:layout_below="@+id/month"
+            tools:text="@string/price_example">
+        </TextView>
+
+        <TextView
+            android:id="@+id/spent"
+            style="@style/TextTitle"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:paddingStart="5dp"
+            android:paddingEnd="0dp"
+            android:text="@string/spent"
+            android:textSize="28sp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/rub"
+            style="@style/Price"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/spent"
+            tools:text="@string/price_example">
+        </TextView>
+
+        <TextView
+            android:id="@+id/usd"
+            style="@style/Price"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/rub"
+            tools:text="@string/usd_example">
+        </TextView>
+
+        <TextView
+            android:id="@+id/eur"
+            style="@style/Price"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/usd"
+            tools:text="@string/eur_example">
+        </TextView>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list"
+        app:layoutManager="LinearLayoutManager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

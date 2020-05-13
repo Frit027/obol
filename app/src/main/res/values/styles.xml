@@ -1,0 +1,73 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="MyHintText" parent="@android:style/TextAppearance">
+        <item name="android:textColor">#CD9575</item>
+    </style>
+
+    <style name="TextTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/textColorInList</item>
+    </style>
+
+    <style name="Price">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/textColorPrice</item>
+    </style>
+
+    <style name="EditTextNumber">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:inputType">numberDecimal</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:maxLength">10</item>
+    </style>
+
+    <style name="EditTextPersonName">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:inputType">textPersonName</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:maxLength">15</item>
+    </style>
+
+    <style name="Spinner">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:spinnerMode">dropdown</item>
+        <item name="android:popupBackground">@color/colorPopupSpinner</item>
+    </style>
+
+    <style name="RelativeLayoutSpinner">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_marginStart">15dp</item>
+        <item name="android:background">@color/colorSpinner</item>
+    </style>
+
+    <style name="Button">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/rounded_corner</item>
+        <item name="android:textColor">@color/colorTextButton</item>
+        <item name="android:fontFamily">sans-serif-smallcaps</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="MyDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:background">@color/colorDialog</item>
+        <item name="colorAccent">@color/colorDialogButtonText</item>
+        <item name="android:windowBackground">@color/colorDialogTitleBackground</item>
+        <item name="android:textColorPrimary">@color/colorDialogButtonText</item>
+    </style>
+
+</resources>

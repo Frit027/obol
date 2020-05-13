@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Obol</string>
+
+    <string name="list_items">Покупки</string>
+    <string name="new_item">Добавить покупку</string>
+    <string name="add_income">Добавить доход</string>
+    <string name="add_category">Добавить категорию</string>
+
+    <string name="about_app">О приложении</string>
+    <string name="budget">Баланс</string>
+    <string name="spent">Потрачено</string>
+    <string name="income">Доход</string>
+    <string name="month">За месяц</string>
+
+    <string name="price_example">14790,50 ₽</string>
+    <string name="usd_example">1790,50 $</string>
+    <string name="eur_example">58,50 €</string>
+    <string name="item_example">McDonald’s</string>
+    <string name="category_example">Кафе и рестораны</string>
+    <string name="date_example">2020–04–05</string>
+
+    <string name="description">Icon</string>
+
+    <string name="save">Сохранить</string>
+    <string name="add">Добавить</string>
+    <string name="update">Изменить</string>
+    <string name="delete">Удалить</string>
+    <string name="cancel">Отмена</string>
+    <string name="close">Закрыть</string>
+
+    <string name="name">Название</string>
+    <string name="price">Цена</string>
+    <string name="category">Категория</string>
+
+    <string name="about">Приложение Obol создано для учёта ваших финансовых расходов. С помощью кнопки \"Добавить доход\" вы
+            можете пополнять свой вирутальный кошелёк. Кошелёк хранит средства в рублях. Занося покупки в трёх разных валютах,
+            вы будете видеть сколько вы потратили денег за текущий месяц. При этом счёт вашего кошелька будет уменьшатся. Например, если
+            вы что-то купили за 2$, то из вашего кошелька будет вычтена эквивалентная сумма в рублях по последнему курсу. Также
+            вы можете добавлять новые категории и изменять уже купленные товары.
+    </string>
+
+</resources>

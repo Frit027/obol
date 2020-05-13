@@ -1,0 +1,67 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    tools:context=".ui.MainActivity"
+    android:background="@color/mainColor"
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp"
+    android:paddingTop="5dp">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="10dp"
+        tools:src="@drawable/ic_food"
+        android:contentDescription="@string/description"/>
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@id/category"
+        tools:text="@string/date_example"
+        android:textColor="@color/textColorInList"
+        android:fontFamily="sans-serif-light"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/date"
+        android:layout_toEndOf="@+id/icon"
+        tools:text="@string/category_example"
+        android:textColor="@color/textColorInList"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/category"
+        android:layout_alignStart="@+id/category"
+        tools:text="@string/item_example"
+        android:textColor="@color/textColorInList"
+        android:fontFamily="sans-serif"
+        android:textStyle="italic"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        tools:text="@string/price_example"
+        android:textColor="@color/textColorInList"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textSize="22sp"/>
+
+</RelativeLayout>
